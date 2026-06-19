@@ -11,6 +11,7 @@ export const MemoHook = () => {
   const [title, setTitle] = useState('Hola');
   const [subTitle, setSubTitle] = useState('Mundo');
 
+  // useCallback memoriza la función
   const handleMyAPICall = useCallback(() => {
     console.log('Llamar a mi API', subTitle);
   }, [subTitle]);
